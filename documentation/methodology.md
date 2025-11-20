@@ -1,12 +1,17 @@
-# Methodology
+### Severity Classification Framework
 
-This project followed a structured SOC/SIEM workflow including:
+To ensure consistency across the Outbreak Command Unit, all alerts were classified using the internal WCDN severity matrix:
 
-1. Alert intake from GuardDuty, Security Hub, CloudTrail, and VPC Flow Logs.
-2. Classification using the outbreak severity matrix (Urgent, High, Medium, Low).
-3. Evidence collection from AWS logging sources.
-4. MITRE ATT&CK mapping for each alert type.
-5. Escalation routing to Threat Hunters or Command Ops.
-6. Communication updates and outbreak status reporting.
-7. Documentation of incident flow and containment recommendations.
+**Urgent:**  
+Active threat, credential compromise, privilege escalation, or events impacting production security.
 
+**High:**  
+Malicious activity with potential for impact, such as brute force attempts, suspicious API calls, or reconnaissance behavior.
+
+**Medium:**  
+Configuration issues, blocked workflow actions, access-denied errors affecting SOC visibility or tooling.
+
+**Low:**  
+Benign events, testing artifacts, or informational findings requiring no immediate action.
+
+Each alert was triaged immediately, and severity determined the escalation path to Threat Hunters or Command Ops.
