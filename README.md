@@ -1,3 +1,5 @@
+![banner](documentation/screenshots/outbreak-banner.png)
+
 🟣 WCDN — Outbreak Command Unit
 SOC/SIEM | Threat Detection | Triage Operations | Cloud Security
 
